@@ -1,0 +1,78 @@
+﻿@model Productos.Data.Entities.Producto
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+<div>
+    <h4><strong>Detalles del Producto</strong></h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Codigo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Codigo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stock)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stock)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IVA)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IVA)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Presentacion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Presentacion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Zona)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Zona)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Proovedor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Proovedor)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning"><i class=" fas fa-pencil-alt"></i></a>
+    <a asp-action="Index" class="btn btn-success"><i class=" fas fa-undo-alt"></i></a>
+</div>
